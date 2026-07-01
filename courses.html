@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- 디자인2 · 강좌 목록 (다크) -->
+<html class="light scroll-smooth" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="theme-color" content="#f6f8fc"/>
+<script>(function(){try{var t=localStorage.getItem('mexx-theme'),d=document.documentElement;if(t==='dark'){d.classList.add('dark');}else{d.classList.remove('dark');d.classList.add('light');var m=document.querySelector('meta[name=theme-color]');if(m)m.content='#f6f8fc';}}catch(e){}})();</script>
+<title>운행지역 | 지리산인월택시 · 지리산콜택시 | 성삼재·백무동·둘레길</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = { darkMode:"class", theme:{ extend:{
+    "colors":{ "background":"rgb(var(--c-background) / <alpha-value>)","surface-bright":"rgb(var(--c-surface-bright) / <alpha-value>)","surface":"rgb(var(--c-surface) / <alpha-value>)","surface-container-lowest":"rgb(var(--c-surface-container-lowest) / <alpha-value>)","surface-container-low":"rgb(var(--c-surface-container-low) / <alpha-value>)","surface-container":"rgb(var(--c-surface-container) / <alpha-value>)","surface-container-high":"rgb(var(--c-surface-container-high) / <alpha-value>)","surface-container-highest":"rgb(var(--c-surface-container-highest) / <alpha-value>)","outline-variant":"rgb(var(--c-outline-variant) / <alpha-value>)","outline":"rgb(var(--c-outline) / <alpha-value>)","on-surface":"rgb(var(--c-on-surface) / <alpha-value>)","on-surface-variant":"rgb(var(--c-on-surface-variant) / <alpha-value>)","secondary":"rgb(var(--c-secondary) / <alpha-value>)","on-secondary":"rgb(var(--c-on-secondary) / <alpha-value>)","on-primary":"rgb(var(--c-on-primary) / <alpha-value>)","secondary-fixed":"rgb(var(--c-secondary-fixed) / <alpha-value>)","on-tertiary-container":"rgb(var(--c-on-tertiary-container) / <alpha-value>)","tertiary-fixed":"rgb(var(--c-tertiary-fixed) / <alpha-value>)","tertiary-container":"rgb(var(--c-tertiary-container) / <alpha-value>)","primary":"rgb(var(--c-primary) / <alpha-value>)","primary-container":"rgb(var(--c-primary-container) / <alpha-value>)","on-primary-container":"rgb(var(--c-on-primary-container) / <alpha-value>)" },
+    "spacing":{ "margin-desktop":"40px","margin-mobile":"16px","gutter":"24px","container-max":"1280px" },
+    "fontFamily":{ "headline-md":["Inter","Noto Sans KR"],"label-sm":["Inter","Noto Sans KR"],"display-lg":["Inter","Noto Sans KR"],"body-md":["Inter","Noto Sans KR"],"label-md":["Inter","Noto Sans KR"],"display-lg-mobile":["Inter","Noto Sans KR"],"headline-lg":["Inter","Noto Sans KR"],"body-lg":["Inter","Noto Sans KR"] },
+    "fontSize":{ "headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}] }
+  }}}
+</script>
+<style>
+  :root, html.dark {
+    --c-background:10 12 16; --c-surface-bright:12 15 21; --c-surface:10 12 16;
+    --c-surface-container-lowest:18 21 28; --c-surface-container-low:14 18 24;
+    --c-surface-container:22 29 43; --c-surface-container-high:28 35 51; --c-surface-container-highest:42 51 80;
+    --c-outline-variant:30 37 54; --c-outline:90 99 128;
+    --c-on-surface:232 236 244; --c-on-surface-variant:139 149 173;
+    --c-secondary:34 160 94; --c-on-secondary:6 37 22; --c-on-primary:10 12 16;
+    --c-secondary-fixed:16 48 32; --c-on-tertiary-container:34 160 94; --c-tertiary-fixed:34 160 94;
+    --c-tertiary-container:14 42 30; --c-primary:13 20 34; --c-primary-container:24 34 52; --c-on-primary-container:139 149 173;
+  }
+  html.light {
+    --c-background:246 248 252; --c-surface-bright:255 255 255; --c-surface:246 248 252;
+    --c-surface-container-lowest:255 255 255; --c-surface-container-low:240 243 249;
+    --c-surface-container:255 255 255; --c-surface-container-high:238 242 248; --c-surface-container-highest:226 233 243;
+    --c-outline-variant:225 231 240; --c-outline:148 157 176;
+    --c-on-surface:18 26 40; --c-on-surface-variant:84 95 117;
+    --c-secondary:17 105 62; --c-on-secondary:255 255 255; --c-on-primary:18 26 40;
+    --c-secondary-fixed:210 238 220; --c-on-tertiary-container:17 105 62; --c-tertiary-fixed:17 105 62;
+    --c-tertiary-container:223 244 232; --c-primary:237 242 248; --c-primary-container:228 235 243; --c-on-primary-container:84 95 117;
+  }
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}
+  .crd-hover{transition:all .3s cubic-bezier(0.4,0,0.2,1);}
+  .crd-hover:hover{transform:translateY(-4px);border-color:rgba(34,160,94,.38);box-shadow:0 16px 38px rgba(0,0,0,.5),0 0 0 1px rgba(34,160,94,.1);}
+  .chip.on{background:rgb(var(--c-secondary-fixed));color:rgb(var(--c-on-tertiary-container));border-color:rgba(34,160,94,.4);}
+  html.light .chd{background:linear-gradient(135deg,#d7efdf,#c4e7cf)!important;}
+  ::-webkit-scrollbar{width:8px;height:8px;}::-webkit-scrollbar-track{background:rgb(var(--c-surface-bright));}::-webkit-scrollbar-thumb{background:rgb(var(--c-surface-container-highest));border-radius:4px;}
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden min-h-screen flex flex-col" style="word-break:keep-all;overflow-wrap:break-word">
+<!-- Nav -->
+<nav class="w-full top-0 sticky z-50 bg-background/85 backdrop-blur border-b border-outline-variant">
+<div class="flex justify-between items-center h-16 px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2.5" href="index.html"><span class="w-7 h-7 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">local_taxi</span></span><span class="font-headline-md text-headline-md font-extrabold text-on-surface tracking-tight whitespace-nowrap">지리산 <span class="text-secondary">인월택시</span></span></a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">홈</a>
+<a class="font-body-md text-body-md text-secondary border-b-2 border-secondary font-bold pb-1" href="courses.html">운행지역</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html#book">예약안내</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="teacher.html">대표소개</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html#contact">문의</a>
+</div>
+</div>
+<a href="tel:01036802088" target="_blank" rel="noopener" class="bg-secondary text-on-secondary px-5 py-2.5 rounded-lg font-label-md text-label-md font-bold hover:opacity-90 transition-all flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">call</span>전화 예약</a>
+</div>
+</nav>
+
+<!-- Header -->
+<section class="relative overflow-hidden bg-surface-bright border-b border-outline-variant py-12 md:py-16">
+<!-- 지리산 배경 사진 (은은하게 · eimoberg, CC BY 2.0 / Wikimedia Commons) -->
+<img src="hero-jirisan.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none z-0" style="opacity:.20"/>
+<div class="absolute inset-0 z-0 pointer-events-none" style="background:linear-gradient(90deg, rgb(var(--c-surface-bright)) 0%, rgb(var(--c-surface-bright) / .55) 46%, rgb(var(--c-surface-bright) / 0) 88%)"></div>
+<div class="absolute inset-x-0 bottom-0 h-24 z-0 pointer-events-none" style="background:linear-gradient(to top, rgb(var(--c-surface-bright)), rgb(var(--c-surface-bright) / 0))"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="inline-flex items-center gap-2 bg-secondary-fixed/60 text-secondary border border-secondary/25 px-3 py-1 rounded-full mb-4"><span class="material-symbols-outlined text-[16px]">terrain</span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">지리산 전 지역 운행</span></div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight mb-3">운행 가능 지역</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">인월·남원 터미널에서 픽업해 지리산 주요 들머리와 둘레길까지 모십니다. 목적지를 눌러 <b class="text-on-surface">픽업 터미널·이용 안내</b>를 확인하세요.</p>
+</div>
+</section>
+
+<main class="flex-grow max-w-container-max mx-auto w-full px-margin-desktop py-12">
+<!-- Filter chips -->
+<div class="flex flex-wrap gap-2.5 mb-8" id="filters">
+<button class="chip on px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md transition-all" data-f="all">전체</button>
+<button class="chip px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md transition-all" data-f="지리산">지리산 등산</button>
+<button class="chip px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md transition-all" data-f="둘레길">둘레길</button>
+<button class="chip px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md transition-all" data-f="터미널">터미널 픽업</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="course-grid"></div>
+<p class="hidden text-center text-on-surface-variant py-16" id="empty">해당 조건의 운행 지역이 없습니다.</p>
+
+<!-- 강좌 선택 가이드 -->
+<section class="mt-16 pt-12 border-t border-outline-variant">
+<div class="text-center mb-8">
+<span class="font-label-sm uppercase tracking-widest text-secondary font-bold">이용 안내</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2">어디로 가시나요?</h2>
+<p class="text-body-md text-on-surface-variant mt-2">목적지를 고르시면 픽업 터미널과 이용 안내를 확인하실 수 있습니다.</p>
+</div>
+<div class="space-y-3 max-w-3xl mx-auto">
+<a href="course.html?c=seongsamjae" class="crd-hover flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-surface-container-lowest border border-outline-variant rounded-xl p-5 no-underline">
+<span class="text-on-surface font-medium flex items-center gap-3"><span class="material-symbols-outlined text-secondary shrink-0">terrain</span>노고단·주능선 종주를 위해 성삼재로 가고 싶다면</span>
+<span class="shrink-0 inline-flex items-center gap-1.5 text-secondary font-bold bg-secondary-fixed/50 px-4 py-2 rounded-full text-[13.5px]">성삼재 <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
+</a>
+<a href="course.html?c=baekmudong" class="crd-hover flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-surface-container-lowest border border-outline-variant rounded-xl p-5 no-underline">
+<span class="text-on-surface font-medium flex items-center gap-3"><span class="material-symbols-outlined text-secondary shrink-0">hiking</span>천왕봉·한신계곡 산행으로 백무동에 가고 싶다면</span>
+<span class="shrink-0 inline-flex items-center gap-1.5 text-secondary font-bold bg-secondary-fixed/50 px-4 py-2 rounded-full text-[13.5px]">백무동 <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
+</a>
+<a href="course.html?c=dulle" class="crd-hover flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-surface-container-lowest border border-outline-variant rounded-xl p-5 no-underline">
+<span class="text-on-surface font-medium flex items-center gap-3"><span class="material-symbols-outlined text-secondary shrink-0">directions_walk</span>지리산둘레길 구간 이동이 필요하다면</span>
+<span class="shrink-0 inline-flex items-center gap-1.5 text-secondary font-bold bg-secondary-fixed/50 px-4 py-2 rounded-full text-[13.5px]">지리산둘레길 <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
+</a>
+<a href="course.html?c=terminal" class="crd-hover flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-surface-container-lowest border border-outline-variant rounded-xl p-5 no-underline">
+<span class="text-on-surface font-medium flex items-center gap-3"><span class="material-symbols-outlined text-secondary shrink-0">directions_bus</span>인월·남원 터미널에서 픽업이 필요하다면</span>
+<span class="shrink-0 inline-flex items-center gap-1.5 text-secondary font-bold bg-secondary-fixed/50 px-4 py-2 rounded-full text-[13.5px]">터미널 픽업 <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
+</a>
+</div>
+<div class="text-center mt-8">
+<a href="tel:01036802088" class="inline-flex items-center gap-2 bg-secondary text-on-secondary px-6 py-3 rounded-xl font-bold text-[15px] hover:opacity-90 transition-all"><span class="material-symbols-outlined text-[18px]">call</span>전화로 예약하기</a>
+<p class="text-on-surface-variant text-[13px] mt-3">어디로 갈지 고민되시면 전화·문자로 편하게 물어보세요.</p>
+</div>
+</section>
+</main>
+
+<footer class="w-full mt-auto bg-background border-t border-outline-variant">
+<div class="py-10 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-2.5"><span class="w-6 h-6 rounded bg-secondary text-on-secondary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">local_taxi</span></span><span class="font-headline-md font-bold text-on-surface">지리산인월택시</span></div>
+<div class="text-center md:text-right"><p class="font-label-md text-on-surface-variant">개인택시 · 대표 김성수 · 지리산 · 인월 · 남원</p><p class="text-[11px] text-on-surface-variant/70 mt-1.5">배경 사진 ⓒ eimoberg · <a href="https://commons.wikimedia.org/wiki/File:Korea-Mountain-Jirisan-09.jpg" target="_blank" rel="noopener" class="hover:text-secondary underline">Wikimedia Commons</a> · CC BY 2.0</p></div>
+</div>
+</footer>
+
+<script src="courses-data.js"></script>
+<script>
+  const grid=document.getElementById('course-grid'), empty=document.getElementById('empty');
+  function card(c){
+    return `<a href="course.html?c=${c.id}" class="crd-hover bg-surface-container-lowest border border-outline-variant rounded-2xl overflow-hidden flex flex-col no-underline" data-kind="${c.kind}" data-grade="${c.grade}">
+      <div class="chd h-32 relative flex flex-col justify-between px-6 py-5" style="background:${c.headerbg}">
+        <span class="material-symbols-outlined text-secondary text-[40px]">${c.icon}</span>
+        <span class="text-secondary font-extrabold text-[23px] tracking-tight">${c.subject}</span>
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <span class="text-secondary font-bold font-label-sm uppercase mb-2">${c.grade} · ${c.kind}</span>
+        <h3 class="font-headline-md text-[19px] text-on-surface mb-2">${c.tagline}</h3>
+        <p class="text-body-md text-on-surface-variant mb-5">${c.desc}</p>
+        <div class="mt-auto pt-4 border-t border-outline-variant flex justify-between items-center">
+          <span class="font-label-md text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">group</span>${c.sessions}</span>
+          <span class="font-label-md text-secondary font-bold flex items-center gap-1">상세 보기 <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
+        </div>
+      </div></a>`;
+  }
+  function render(f){
+    const list=(window.COURSES||[]).filter(c=> f==='all'||c.kind===f||c.grade===f);
+    grid.innerHTML=list.map(card).join('');
+    empty.classList.toggle('hidden', list.length>0);
+  }
+  render('all');
+  document.querySelectorAll('#filters .chip').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('#filters .chip').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on'); render(b.dataset.f);
+  }));
+</script>
+<script>
+  function toggleTheme(){var d=document.documentElement,light=d.classList.toggle('light');d.classList.toggle('dark',!light);try{localStorage.setItem('mexx-theme',light?'light':'dark');}catch(e){}var ic=document.getElementById('theme-icon');if(ic)ic.textContent=light?'dark_mode':'light_mode';var lb=document.getElementById('theme-label');if(lb)lb.textContent=light?'\uc5b4\ub450\uc6b4 \ud654\uba74 \ubc84\uc804':'\ubc1d\uc740 \ud654\uba74 \ubc84\uc804';var m=document.querySelector('meta[name=theme-color]');if(m)m.content=light?'#f6f8fc':'#0a0c10';}
+  (function(){var nav=document.querySelector('nav');if(!nav)return;var kakao=nav.querySelector('a[href^="tel:"]');var light=document.documentElement.classList.contains('light');var btn=document.createElement('button');btn.id='theme-toggle';btn.setAttribute('aria-label','\ub2e4\ud06c/\ub77c\uc774\ud2b8 \ubaa8\ub4dc \uc804\ud658');btn.title='\ub2e4\ud06c/\ub77c\uc774\ud2b8 \uc804\ud658';btn.className='h-10 px-3 rounded-lg border border-outline-variant text-on-surface-variant hover:text-secondary hover:border-secondary transition-colors flex items-center gap-1.5 shrink-0';btn.innerHTML='<span class="material-symbols-outlined text-[20px]" id="theme-icon">'+(light?'dark_mode':'light_mode')+'</span><span id="theme-label" class="hidden sm:inline font-label-md text-label-md font-bold whitespace-nowrap">'+(light?'\uc5b4\ub450\uc6b4 \ud654\uba74 \ubc84\uc804':'\ubc1d\uc740 \ud654\uba74 \ubc84\uc804')+'</span>';btn.onclick=toggleTheme;if(kakao&&kakao.parentElement){kakao.parentElement.insertBefore(btn,kakao);}else{nav.appendChild(btn);}})();
+</script>
+</body></html>

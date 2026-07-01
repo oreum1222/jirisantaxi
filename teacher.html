@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- 디자인2 · 강사 소개 (다크) -->
+<html class="light scroll-smooth" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="theme-color" content="#f6f8fc"/>
+<script>(function(){try{var t=localStorage.getItem('mexx-theme'),d=document.documentElement;if(t==='dark'){d.classList.add('dark');}else{d.classList.remove('dark');d.classList.add('light');var m=document.querySelector('meta[name=theme-color]');if(m)m.content='#f6f8fc';}}catch(e){}})();</script>
+<title>대표 소개 · 김성수 | 지리산인월택시 · 지리산콜택시</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = { darkMode:"class", theme:{ extend:{
+    "colors":{ "background":"rgb(var(--c-background) / <alpha-value>)","surface-bright":"rgb(var(--c-surface-bright) / <alpha-value>)","surface":"rgb(var(--c-surface) / <alpha-value>)","surface-container-lowest":"rgb(var(--c-surface-container-lowest) / <alpha-value>)","surface-container-low":"rgb(var(--c-surface-container-low) / <alpha-value>)","surface-container":"rgb(var(--c-surface-container) / <alpha-value>)","surface-container-high":"rgb(var(--c-surface-container-high) / <alpha-value>)","surface-container-highest":"rgb(var(--c-surface-container-highest) / <alpha-value>)","outline-variant":"rgb(var(--c-outline-variant) / <alpha-value>)","outline":"rgb(var(--c-outline) / <alpha-value>)","on-surface":"rgb(var(--c-on-surface) / <alpha-value>)","on-surface-variant":"rgb(var(--c-on-surface-variant) / <alpha-value>)","secondary":"rgb(var(--c-secondary) / <alpha-value>)","on-secondary":"rgb(var(--c-on-secondary) / <alpha-value>)","on-primary":"rgb(var(--c-on-primary) / <alpha-value>)","secondary-fixed":"rgb(var(--c-secondary-fixed) / <alpha-value>)","on-tertiary-container":"rgb(var(--c-on-tertiary-container) / <alpha-value>)","tertiary-fixed":"rgb(var(--c-tertiary-fixed) / <alpha-value>)","tertiary-container":"rgb(var(--c-tertiary-container) / <alpha-value>)","primary":"rgb(var(--c-primary) / <alpha-value>)","primary-container":"rgb(var(--c-primary-container) / <alpha-value>)","on-primary-container":"rgb(var(--c-on-primary-container) / <alpha-value>)" },
+    "spacing":{ "margin-desktop":"40px","margin-mobile":"16px","gutter":"24px","container-max":"1280px" },
+    "fontFamily":{ "headline-md":["Inter","Noto Sans KR"],"label-sm":["Inter","Noto Sans KR"],"display-lg":["Inter","Noto Sans KR"],"body-md":["Inter","Noto Sans KR"],"label-md":["Inter","Noto Sans KR"],"display-lg-mobile":["Inter","Noto Sans KR"],"headline-lg":["Inter","Noto Sans KR"],"body-lg":["Inter","Noto Sans KR"] },
+    "fontSize":{ "headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}] }
+  }}}
+</script>
+<style>
+  :root, html.dark {
+    --c-background:10 12 16; --c-surface-bright:12 15 21; --c-surface:10 12 16;
+    --c-surface-container-lowest:18 21 28; --c-surface-container-low:14 18 24;
+    --c-surface-container:22 29 43; --c-surface-container-high:28 35 51; --c-surface-container-highest:42 51 80;
+    --c-outline-variant:30 37 54; --c-outline:90 99 128;
+    --c-on-surface:232 236 244; --c-on-surface-variant:139 149 173;
+    --c-secondary:34 160 94; --c-on-secondary:6 37 22; --c-on-primary:10 12 16;
+    --c-secondary-fixed:16 48 32; --c-on-tertiary-container:34 160 94; --c-tertiary-fixed:34 160 94;
+    --c-tertiary-container:14 42 30; --c-primary:13 20 34; --c-primary-container:24 34 52; --c-on-primary-container:139 149 173;
+  }
+  html.light {
+    --c-background:246 248 252; --c-surface-bright:255 255 255; --c-surface:246 248 252;
+    --c-surface-container-lowest:255 255 255; --c-surface-container-low:240 243 249;
+    --c-surface-container:255 255 255; --c-surface-container-high:238 242 248; --c-surface-container-highest:226 233 243;
+    --c-outline-variant:225 231 240; --c-outline:148 157 176;
+    --c-on-surface:18 26 40; --c-on-surface-variant:84 95 117;
+    --c-secondary:17 105 62; --c-on-secondary:255 255 255; --c-on-primary:18 26 40;
+    --c-secondary-fixed:210 238 220; --c-on-tertiary-container:17 105 62; --c-tertiary-fixed:17 105 62;
+    --c-tertiary-container:223 244 232; --c-primary:237 242 248; --c-primary-container:228 235 243; --c-on-primary-container:84 95 117;
+  }
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}
+  .fi{opacity:0;transform:translateY(20px);transition:all .6s cubic-bezier(0.22,1,0.36,1);}
+  .fi.v{opacity:1;transform:translateY(0);}
+  .crd-hover{transition:all .3s cubic-bezier(0.4,0,0.2,1);}
+  .crd-hover:hover{transform:translateY(-4px);border-color:rgba(34,160,94,.38);box-shadow:0 16px 38px rgba(0,0,0,.5),0 0 0 1px rgba(34,160,94,.1);}
+  ::-webkit-scrollbar{width:8px;height:8px;}::-webkit-scrollbar-track{background:rgb(var(--c-surface-bright));}::-webkit-scrollbar-thumb{background:rgb(var(--c-surface-container-highest));border-radius:4px;}
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden" style="word-break:keep-all;overflow-wrap:break-word">
+<!-- Nav -->
+<nav class="w-full top-0 sticky z-50 bg-background/85 backdrop-blur border-b border-outline-variant">
+<div class="flex justify-between items-center h-16 px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2.5" href="index.html"><span class="w-7 h-7 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">local_taxi</span></span><span class="font-headline-md text-headline-md font-extrabold text-on-surface tracking-tight whitespace-nowrap">지리산 <span class="text-secondary">인월택시</span></span></a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">홈</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="courses.html">운행지역</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html#book">예약안내</a>
+<a class="font-body-md text-body-md text-secondary border-b-2 border-secondary font-bold pb-1" href="teacher.html">대표소개</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html#contact">문의</a>
+</div>
+</div>
+<a href="tel:01036802088" target="_blank" rel="noopener" class="bg-secondary text-on-secondary px-5 py-2.5 rounded-lg font-label-md text-label-md font-bold hover:opacity-90 transition-all flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">call</span>전화 예약</a>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="relative overflow-hidden bg-surface-bright border-b border-outline-variant py-14 md:py-20">
+<!-- 지리산 배경 사진 (은은하게 · eimoberg, CC BY 2.0 / Wikimedia Commons) -->
+<img src="hero-jirisan.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none z-0" style="opacity:.20"/>
+<div class="absolute inset-0 z-0 pointer-events-none" style="background:linear-gradient(90deg, rgb(var(--c-surface-bright)) 0%, rgb(var(--c-surface-bright) / .55) 46%, rgb(var(--c-surface-bright) / 0) 88%)"></div>
+<div class="absolute inset-x-0 bottom-0 h-24 z-0 pointer-events-none" style="background:linear-gradient(to top, rgb(var(--c-surface-bright)), rgb(var(--c-surface-bright) / 0))"></div>
+<div class="absolute -top-32 -right-20 w-[600px] h-[600px] rounded-full pointer-events-none z-0" style="background:radial-gradient(circle,rgba(34,160,94,.1),transparent 70%)"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10 flex flex-col md:flex-row items-center gap-10">
+<div class="relative shrink-0">
+<div class="w-44 h-44 md:w-52 md:h-52 rounded-full border-[3px] border-secondary p-1.5 overflow-hidden bg-surface-container-lowest flex items-center justify-center" style="background:radial-gradient(circle,#0e2a1c,#12151c)">
+<span class="material-symbols-outlined text-secondary" style="font-size:96px;font-variation-settings:'FILL' 1;">local_taxi</span>
+</div>
+<div class="absolute bottom-2 right-2 bg-secondary text-on-secondary w-9 h-9 rounded-full flex items-center justify-center shadow-lg"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">verified</span></div>
+</div>
+<div class="text-center md:text-left">
+<div class="inline-flex items-center gap-2 bg-secondary-fixed/60 text-secondary border border-secondary/25 px-3 py-1 rounded-full mb-4"><span class="material-symbols-outlined text-[16px]">verified_user</span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">무사고 인증차량 · 개인택시</span></div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">대표 김성수</h1>
+<p class="font-headline-md text-headline-md text-secondary mt-2">무사고 운전으로 지리산 어디든, 안전하게</p>
+<div class="flex flex-wrap justify-center md:justify-start gap-x-7 gap-y-3 mt-6">
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><span class="font-label-md text-on-surface-variant"><b class="text-on-surface">무사고 인증차량</b></span></div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">terrain</span><span class="font-label-md text-on-surface-variant">지리산 전 지역 운행</span></div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">badge</span><span class="font-label-md text-on-surface-variant">등록 개인택시 · 407-05-19817</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<main class="max-w-container-max mx-auto px-margin-desktop py-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- About -->
+<div class="lg:col-span-8 space-y-14">
+<section class="fi">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">person</span>대표 소개</h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed">
+<p class="font-body-lg text-body-lg"><b class="text-on-surface">지리산인월택시</b>는 오랜 무사고 운전으로 업계 선두를 달려온 <b class="text-on-surface">대표 김성수</b>의 개인택시입니다. 지난 수년간 고객님들과 더불어 성장해 왔습니다.</p>
+<p class="font-body-md text-body-md">개인택시업계의 경쟁이 점점 더 치열해지는 상황에서도, <b class="text-on-surface">고객님을 먼저 생각하는 노하우</b>를 바탕으로 더욱 편안한 여행이 되시도록 안전하게 모시고 있습니다.</p>
+<p class="font-body-md text-body-md">성삼재·백무동·뱀사골·정령치부터 지리산둘레길, 인월·남원 터미널까지 — 지리산 구석구석을 잘 아는 기사가 안전하게 안내합니다.</p>
+<p class="font-body-md text-body-md">보여주신 고객 여러분의 관심과 성원에 깊이 감사드립니다.</p>
+<div class="flex items-start gap-3 rounded-xl bg-secondary-fixed/40 border border-secondary/20 px-5 py-4 my-8">
+<span class="material-symbols-outlined text-secondary mt-0.5 shrink-0">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface">“무사고 운전자로서, 여러분을 안전하게 모실 것을 약속드립니다. 더 편안한 여행이 되시도록 늘 노력하겠습니다.”</p>
+</div>
+</div>
+</section>
+<section class="fi">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">workspace_premium</span>이런 점이 다릅니다</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="crd-hover bg-surface-container-lowest p-6 rounded-xl border border-outline-variant"><div class="w-12 h-12 bg-secondary-fixed text-secondary rounded-xl flex items-center justify-center mb-4"><span class="material-symbols-outlined">verified</span></div><h4 class="font-headline-md text-[17px] text-on-surface mb-1">무사고 운전</h4><p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed">오랜 무사고 경력의 인증차량<br/>안전을 최우선으로 운행</p></div>
+<div class="crd-hover bg-surface-container-lowest p-6 rounded-xl border border-outline-variant"><div class="w-12 h-12 bg-secondary-fixed text-secondary rounded-xl flex items-center justify-center mb-4"><span class="material-symbols-outlined">terrain</span></div><h4 class="font-headline-md text-[17px] text-on-surface mb-1">지리산 전문</h4><p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed">성삼재·백무동·뱀사골·둘레길<br>지리산 구석구석 최적 경로</p></div>
+<div class="crd-hover bg-surface-container-lowest p-6 rounded-xl border border-outline-variant"><div class="w-12 h-12 bg-secondary-fixed text-secondary rounded-xl flex items-center justify-center mb-4"><span class="material-symbols-outlined">badge</span></div><h4 class="font-headline-md text-[17px] text-on-surface mb-1">등록 개인택시</h4><p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed">대표 김성수<br/>사업자등록 407-05-19817<br/>현금·카드 결제</p></div>
+</div>
+</section>
+<section class="fi">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">map</span>운행 가능 지역</h2>
+<p class="text-body-md text-on-surface-variant mb-8">지리산 주요 들머리·둘레길·터미널 — 목적지를 눌러 이용 안내를 확인하세요.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5" id="teacher-courses"></div>
+</section>
+</div>
+<!-- Sidebar -->
+<aside class="lg:col-span-4">
+<div class="sticky top-24 space-y-6">
+<div class="bg-surface-container-lowest p-7 rounded-2xl border border-outline-variant">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-5">한눈에 보기</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center"><span class="font-body-md text-on-surface-variant">운행 지역</span><span class="font-label-md text-on-surface">지리산 전 지역</span></div>
+<div class="flex justify-between items-center"><span class="font-body-md text-on-surface-variant">픽업 터미널</span><span class="font-label-md text-on-surface">인월 · 남원</span></div>
+<div class="flex justify-between items-center"><span class="font-body-md text-on-surface-variant">탑승 인원</span><span class="font-label-md text-secondary bg-secondary-fixed px-3 py-1 rounded-full">최대 4인</span></div>
+<div class="flex justify-between items-center"><span class="font-body-md text-on-surface-variant">결제</span><span class="font-label-md text-on-surface">현금 · 카드</span></div>
+</div>
+<a href="tel:01036802088" class="block text-center w-full mt-7 py-3.5 bg-secondary text-on-secondary rounded-xl font-headline-md text-[16px] font-bold hover:opacity-90 transition-all">전화 예약</a>
+<div class="flex gap-3 mt-3">
+<a href="sms:01036802088" class="flex-1 text-center py-3 bg-surface-container border border-outline-variant rounded-xl font-label-md text-on-surface hover:border-secondary/40 transition-all">문자 예약</a>
+<a href="#kakao" onclick="alert('카카오톡 예약 채널은 준비 중입니다.\n전화 또는 문자로 예약해 주세요.');return false;" class="flex-1 text-center py-3 bg-surface-container border border-outline-variant rounded-xl font-label-md text-on-surface hover:border-secondary/40 transition-all">카카오톡</a>
+</div>
+</div>
+</div>
+</aside>
+</main>
+
+<footer class="w-full bg-background border-t border-outline-variant">
+<div class="py-10 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-2.5"><span class="w-6 h-6 rounded bg-secondary text-on-secondary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">local_taxi</span></span><span class="font-headline-md font-bold text-on-surface">지리산인월택시</span></div>
+<div class="text-center md:text-right"><p class="font-label-md text-on-surface-variant">개인택시 · 대표 김성수 · 지리산 · 인월 · 남원</p><p class="text-[11px] text-on-surface-variant/70 mt-1.5">배경 사진 ⓒ eimoberg · <a href="https://commons.wikimedia.org/wiki/File:Korea-Mountain-Jirisan-09.jpg" target="_blank" rel="noopener" class="hover:text-secondary underline">Wikimedia Commons</a> · CC BY 2.0</p></div>
+</div>
+</footer>
+
+<script src="courses-data.js"></script>
+<script>
+  // 담당 강좌 카드 렌더 (공통 데이터)
+  const wrap=document.getElementById('teacher-courses');
+  if(window.COURSES){window.COURSES.forEach(c=>{
+    const a=document.createElement('a'); a.href='course.html?c='+c.id;
+    a.className='crd-hover bg-surface-container-lowest border border-outline-variant rounded-2xl p-5 flex items-center gap-4 no-underline';
+    a.innerHTML=`<div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:${c.headerbg}"><span class="material-symbols-outlined text-secondary">${c.icon}</span></div>
+      <div class="min-w-0"><div class="flex items-center gap-2"><span class="text-secondary font-bold text-[11px] bg-secondary-fixed px-2 py-0.5 rounded-full">${c.grade}</span><span class="text-on-surface-variant text-[12px]">${c.kind} · ${c.time}</span></div>
+      <h4 class="font-headline-md text-[16px] text-on-surface mt-1.5 truncate">${c.subject}</h4></div>
+      <span class="material-symbols-outlined text-on-surface-variant ml-auto shrink-0">arrow_forward</span>`;
+    wrap.appendChild(a);
+  });}
+  const o=new IntersectionObserver(es=>{es.forEach((e,i)=>{e.isIntersecting&&(setTimeout(()=>e.target.classList.add('v'),i*60),o.unobserve(e.target))})},{threshold:.1});
+  document.querySelectorAll('.fi').forEach(e=>o.observe(e));
+</script>
+<script>
+  function toggleTheme(){var d=document.documentElement,light=d.classList.toggle('light');d.classList.toggle('dark',!light);try{localStorage.setItem('mexx-theme',light?'light':'dark');}catch(e){}var ic=document.getElementById('theme-icon');if(ic)ic.textContent=light?'dark_mode':'light_mode';var lb=document.getElementById('theme-label');if(lb)lb.textContent=light?'\uc5b4\ub450\uc6b4 \ud654\uba74 \ubc84\uc804':'\ubc1d\uc740 \ud654\uba74 \ubc84\uc804';var m=document.querySelector('meta[name=theme-color]');if(m)m.content=light?'#f6f8fc':'#0a0c10';}
+  (function(){var nav=document.querySelector('nav');if(!nav)return;var kakao=nav.querySelector('a[href^="tel:"]');var light=document.documentElement.classList.contains('light');var btn=document.createElement('button');btn.id='theme-toggle';btn.setAttribute('aria-label','\ub2e4\ud06c/\ub77c\uc774\ud2b8 \ubaa8\ub4dc \uc804\ud658');btn.title='\ub2e4\ud06c/\ub77c\uc774\ud2b8 \uc804\ud658';btn.className='h-10 px-3 rounded-lg border border-outline-variant text-on-surface-variant hover:text-secondary hover:border-secondary transition-colors flex items-center gap-1.5 shrink-0';btn.innerHTML='<span class="material-symbols-outlined text-[20px]" id="theme-icon">'+(light?'dark_mode':'light_mode')+'</span><span id="theme-label" class="hidden sm:inline font-label-md text-label-md font-bold whitespace-nowrap">'+(light?'\uc5b4\ub450\uc6b4 \ud654\uba74 \ubc84\uc804':'\ubc1d\uc740 \ud654\uba74 \ubc84\uc804')+'</span>';btn.onclick=toggleTheme;if(kakao&&kakao.parentElement){kakao.parentElement.insertBefore(btn,kakao);}else{nav.appendChild(btn);}})();
+</script>
+</body></html>

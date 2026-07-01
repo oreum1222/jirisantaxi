@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- 디자인2 · 강좌 상세 (다크, 데이터 구동 ?c=) -->
+<html class="light scroll-smooth" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="theme-color" content="#f6f8fc"/>
+<script>(function(){try{var t=localStorage.getItem('mexx-theme'),d=document.documentElement;if(t==='dark'){d.classList.add('dark');}else{d.classList.remove('dark');d.classList.add('light');var m=document.querySelector('meta[name=theme-color]');if(m)m.content='#f6f8fc';}}catch(e){}})();</script>
+<title>운행 코스 | 지리산인월택시 · 지리산콜택시</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = { darkMode:"class", theme:{ extend:{
+    "colors":{ "background":"rgb(var(--c-background) / <alpha-value>)","surface-bright":"rgb(var(--c-surface-bright) / <alpha-value>)","surface":"rgb(var(--c-surface) / <alpha-value>)","surface-container-lowest":"rgb(var(--c-surface-container-lowest) / <alpha-value>)","surface-container-low":"rgb(var(--c-surface-container-low) / <alpha-value>)","surface-container":"rgb(var(--c-surface-container) / <alpha-value>)","surface-container-high":"rgb(var(--c-surface-container-high) / <alpha-value>)","surface-container-highest":"rgb(var(--c-surface-container-highest) / <alpha-value>)","outline-variant":"rgb(var(--c-outline-variant) / <alpha-value>)","outline":"rgb(var(--c-outline) / <alpha-value>)","on-surface":"rgb(var(--c-on-surface) / <alpha-value>)","on-surface-variant":"rgb(var(--c-on-surface-variant) / <alpha-value>)","secondary":"rgb(var(--c-secondary) / <alpha-value>)","on-secondary":"rgb(var(--c-on-secondary) / <alpha-value>)","on-primary":"rgb(var(--c-on-primary) / <alpha-value>)","secondary-fixed":"rgb(var(--c-secondary-fixed) / <alpha-value>)","on-tertiary-container":"rgb(var(--c-on-tertiary-container) / <alpha-value>)","tertiary-fixed":"rgb(var(--c-tertiary-fixed) / <alpha-value>)","tertiary-container":"rgb(var(--c-tertiary-container) / <alpha-value>)","primary":"rgb(var(--c-primary) / <alpha-value>)","primary-container":"rgb(var(--c-primary-container) / <alpha-value>)","on-primary-container":"rgb(var(--c-on-primary-container) / <alpha-value>)" },
+    "spacing":{ "margin-desktop":"40px","margin-mobile":"16px","gutter":"24px","container-max":"1280px" },
+    "fontFamily":{ "headline-md":["Inter","Noto Sans KR"],"label-sm":["Inter","Noto Sans KR"],"display-lg":["Inter","Noto Sans KR"],"body-md":["Inter","Noto Sans KR"],"label-md":["Inter","Noto Sans KR"],"display-lg-mobile":["Inter","Noto Sans KR"],"headline-lg":["Inter","Noto Sans KR"],"body-lg":["Inter","Noto Sans KR"] },
+    "fontSize":{ "headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}] }
+  }}}
+</script>
+<style>
+  :root, html.dark {
+    --c-background:10 12 16; --c-surface-bright:12 15 21; --c-surface:10 12 16;
+    --c-surface-container-lowest:18 21 28; --c-surface-container-low:14 18 24;
+    --c-surface-container:22 29 43; --c-surface-container-high:28 35 51; --c-surface-container-highest:42 51 80;
+    --c-outline-variant:30 37 54; --c-outline:90 99 128;
+    --c-on-surface:232 236 244; --c-on-surface-variant:139 149 173;
+    --c-secondary:34 160 94; --c-on-secondary:6 37 22; --c-on-primary:10 12 16;
+    --c-secondary-fixed:16 48 32; --c-on-tertiary-container:34 160 94; --c-tertiary-fixed:34 160 94;
+    --c-tertiary-container:14 42 30; --c-primary:13 20 34; --c-primary-container:24 34 52; --c-on-primary-container:139 149 173;
+  }
+  html.light {
+    --c-background:246 248 252; --c-surface-bright:255 255 255; --c-surface:246 248 252;
+    --c-surface-container-lowest:255 255 255; --c-surface-container-low:240 243 249;
+    --c-surface-container:255 255 255; --c-surface-container-high:238 242 248; --c-surface-container-highest:226 233 243;
+    --c-outline-variant:225 231 240; --c-outline:148 157 176;
+    --c-on-surface:18 26 40; --c-on-surface-variant:84 95 117;
+    --c-secondary:17 105 62; --c-on-secondary:255 255 255; --c-on-primary:18 26 40;
+    --c-secondary-fixed:210 238 220; --c-on-tertiary-container:17 105 62; --c-tertiary-fixed:17 105 62;
+    --c-tertiary-container:223 244 232; --c-primary:237 242 248; --c-primary-container:228 235 243; --c-on-primary-container:84 95 117;
+  }
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}
+  .ctbl{width:100%;border-collapse:collapse;font-size:13.5px;background:#12151c;border:1px solid #1e2536;border-radius:12px;overflow:hidden}
+  .ctbl th{background:#161d2b;color:#22a05e;padding:11px 16px;font-size:11.5px;font-weight:600;letter-spacing:.04em;text-align:left;border-bottom:1px solid #2a3350}
+  .ctbl td{padding:11px 16px;border-bottom:1px solid #1e2536;color:#e8ecf4;vertical-align:top;line-height:1.55}
+  .ctbl tr:last-child td{border-bottom:none}
+  .ctbl .no{width:42px;font-weight:700;color:#2a7d55}
+  .ctbl .dt{width:92px;color:#8b95ad;font-weight:600;white-space:nowrap}
+  .ot{display:inline-block;font-size:10px;font-weight:700;color:#22a05e;background:#103020;padding:1px 7px;border-radius:5px;margin-right:6px;vertical-align:middle}
+  .trk{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:5px;margin-right:7px;vertical-align:middle}
+  .trk.g{color:#22a05e;background:#103020}.trk.s{color:#a78bfa;background:rgba(167,139,250,.14)}
+  .vid td{background:rgba(91,156,245,.06)}.vid .dt{color:#5b9cf5}
+  .two-line{display:block}.two-line + .two-line{margin-top:7px;padding-top:7px;border-top:1px dashed #1e2536}
+  ::-webkit-scrollbar{width:8px;height:8px;}::-webkit-scrollbar-track{background:rgb(var(--c-surface-bright));}::-webkit-scrollbar-thumb{background:rgb(var(--c-surface-container-highest));border-radius:4px;}
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden" style="word-break:keep-all;overflow-wrap:break-word">
+<!-- Nav -->
+<nav class="w-full top-0 sticky z-50 bg-background/85 backdrop-blur border-b border-outline-variant">
+<div class="flex justify-between items-center h-16 px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2.5" href="index.html"><span class="w-7 h-7 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">local_taxi</span></span><span class="font-headline-md text-headline-md font-extrabold text-on-surface tracking-tight whitespace-nowrap">지리산 <span class="text-secondary">인월택시</span></span></a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">홈</a>
+<a class="font-body-md text-body-md text-secondary border-b-2 border-secondary font-bold pb-1" href="courses.html">운행지역</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html#book">예약안내</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="teacher.html">대표소개</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html#contact">문의</a>
+</div>
+</div>
+<a href="tel:01036802088" target="_blank" rel="noopener" class="bg-secondary text-on-secondary px-5 py-2.5 rounded-lg font-label-md text-label-md font-bold hover:opacity-90 transition-all flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">call</span>전화 예약</a>
+</div>
+</nav>
+
+<!-- Hero (rendered) -->
+<section class="bg-surface-bright border-b border-outline-variant relative overflow-hidden">
+<!-- 지리산 배경 사진 (은은하게 · eimoberg, CC BY 2.0 / Wikimedia Commons) -->
+<img src="hero-jirisan.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none z-0" style="opacity:.20"/>
+<div class="absolute inset-0 z-0 pointer-events-none" style="background:linear-gradient(90deg, rgb(var(--c-surface-bright)) 0%, rgb(var(--c-surface-bright) / .55) 46%, rgb(var(--c-surface-bright) / 0) 88%)"></div>
+<div class="absolute inset-x-0 bottom-0 h-24 z-0 pointer-events-none" style="background:linear-gradient(to top, rgb(var(--c-surface-bright)), rgb(var(--c-surface-bright) / 0))"></div>
+<div class="absolute -top-32 -right-20 w-[600px] h-[600px] rounded-full pointer-events-none z-0" style="background:radial-gradient(circle,rgba(34,160,94,.1),transparent 70%)"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-12 md:py-16 relative z-10">
+<nav class="flex items-center gap-2 text-label-md text-on-surface-variant mb-6">
+<a href="courses.html" class="hover:text-secondary">운행지역</a><span class="material-symbols-outlined text-[16px]">chevron_right</span><span id="bc" class="text-on-surface"></span>
+</nav>
+<div id="hero"></div>
+</div>
+</section>
+
+<main class="max-w-container-max mx-auto px-margin-desktop py-14 grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-8 space-y-12">
+<!-- learn -->
+<section class="bg-surface-container-low p-7 rounded-xl border border-outline-variant">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">이용 안내</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="learn"></div>
+</section>
+<!-- curriculum -->
+<section>
+<div class="flex items-end justify-between mb-5 flex-wrap gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">코스 안내</h2>
+<span class="font-label-md text-on-surface-variant" id="curr-sub"></span>
+</div>
+<div id="curriculum"></div>
+</section>
+<!-- 교재·과제·관리 -->
+<section>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-5">이용 · 결제 안내</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant flex gap-4"><div class="w-11 h-11 bg-secondary-fixed text-secondary rounded-xl flex items-center justify-center shrink-0"><span class="material-symbols-outlined">payments</span></div><div><h4 class="font-headline-md text-[16px] text-on-surface mb-1">결제 수단</h4><p class="text-[13px] text-on-surface-variant leading-relaxed" id="m-book"></p></div></div>
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant flex gap-4"><div class="w-11 h-11 bg-secondary-fixed text-secondary rounded-xl flex items-center justify-center shrink-0"><span class="material-symbols-outlined">group</span></div><div><h4 class="font-headline-md text-[16px] text-on-surface mb-1">탑승 인원</h4><p class="text-[13px] text-on-surface-variant leading-relaxed">예약 시 최대 4명 함께 탑승 가능</p></div></div>
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant flex gap-4"><div class="w-11 h-11 bg-secondary-fixed text-secondary rounded-xl flex items-center justify-center shrink-0"><span class="material-symbols-outlined">wb_twilight</span></div><div><h4 class="font-headline-md text-[16px] text-on-surface mb-1">새벽 픽업</h4><p class="text-[13px] text-on-surface-variant leading-relaxed">사전 예약 시 새벽 시간 픽업 가능</p></div></div>
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant flex gap-4"><div class="w-11 h-11 bg-secondary-fixed text-secondary rounded-xl flex items-center justify-center shrink-0"><span class="material-symbols-outlined">call</span></div><div><h4 class="font-headline-md text-[16px] text-on-surface mb-1">예약 방법</h4><p class="text-[13px] text-on-surface-variant leading-relaxed">전화·문자·카카오톡</p></div></div>
+</div>
+</section>
+</div>
+<!-- Sidebar -->
+<aside class="lg:col-span-4">
+<div class="sticky top-24 space-y-6">
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden">
+<div class="p-7 space-y-5">
+<div id="info"></div>
+<a href="tel:01036802088" class="block text-center w-full py-3.5 bg-secondary text-on-secondary rounded-xl font-headline-md text-[16px] font-bold hover:opacity-90 transition-all">전화로 예약하기</a>
+<a href="courses.html" class="block text-center w-full py-3 bg-surface-container border border-outline-variant text-on-surface rounded-xl font-label-md hover:border-secondary/40 transition-all">다른 지역 보기</a>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 flex items-center gap-4">
+<div class="w-14 h-14 rounded-full border-2 border-secondary p-0.5 overflow-hidden shrink-0 bg-surface-container flex items-center justify-center"><span class="material-symbols-outlined text-secondary text-[28px]" style="font-variation-settings:'FILL' 1;">local_taxi</span></div>
+<div><p class="font-headline-md text-[16px] text-on-surface">대표 김성수</p><p class="text-[12px] text-on-surface-variant">무사고 인증차량 · 개인택시</p><a href="teacher.html" class="text-secondary text-[12px] font-bold hover:underline">대표 소개 →</a></div>
+</div>
+</div>
+</aside>
+</main>
+
+<footer class="w-full bg-background border-t border-outline-variant">
+<div class="py-10 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-2.5"><span class="w-6 h-6 rounded bg-secondary text-on-secondary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">local_taxi</span></span><span class="font-headline-md font-bold text-on-surface">지리산인월택시</span></div>
+<div class="text-center md:text-right"><p class="font-label-md text-on-surface-variant">개인택시 · 대표 김성수 · 지리산 · 인월 · 남원</p><p class="text-[11px] text-on-surface-variant/70 mt-1.5">배경 사진 ⓒ eimoberg · <a href="https://commons.wikimedia.org/wiki/File:Korea-Mountain-Jirisan-09.jpg" target="_blank" rel="noopener" class="hover:text-secondary underline">Wikimedia Commons</a> · CC BY 2.0</p></div>
+</div>
+</footer>
+
+<script src="courses-data.js"></script>
+<script>
+  const qs=new URLSearchParams(location.search);
+  const id=qs.get('c')||'seongsamjae';
+  const c=(window.COURSES||[]).find(x=>x.id===id)||window.COURSES[0];
+  document.title=`${c.subject} · ${c.grade} ${c.kind} | 지리산인월택시`;
+  document.getElementById('bc').textContent=`${c.grade} ${c.kind} · ${c.subject}`;
+  // hero
+  document.getElementById('hero').innerHTML=`
+    <div class="flex items-center gap-2 mb-4">
+      <span class="bg-secondary text-on-secondary text-label-sm font-bold px-3 py-1 rounded-full">${c.grade}</span>
+      <span class="bg-secondary-fixed text-secondary border border-secondary/25 text-label-sm font-semibold px-3 py-1 rounded-full">${c.kind}</span>
+    </div>
+    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">${c.subject}</h1>
+    <p class="font-headline-md text-headline-md text-secondary mt-2">${c.tagline}</p>
+    <div class="flex flex-wrap items-center gap-x-7 gap-y-3 mt-6 text-on-surface-variant font-label-md">
+      <span class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">person</span>대표 김성수</span>
+      <span class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>${c.time}</span>
+      <span class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">group</span>${c.sessions}</span>
+      <span class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">event_available</span>${c.open}</span>
+    </div>`;
+  // learn
+  document.getElementById('learn').innerHTML=c.learn.map(t=>`<div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary mt-0.5">check_circle</span><span class="font-body-md text-on-surface-variant">${t}</span></div>`).join('');
+  // curriculum sub
+  document.getElementById('curr-sub').textContent=`${c.day} ${c.time} · ${c.sessions} · ${c.period}`;
+  // curriculum table
+  const head=`<tr><th class="dt" style="width:120px">항목</th><th>안내</th></tr>`;
+  const body=c.rows.map(r=>`<tr><td class="dt" style="white-space:nowrap;color:#22a05e;font-weight:700">${r.k}</td><td>${r.v}</td></tr>`).join('');
+  document.getElementById('curriculum').innerHTML=`<table class="ctbl"><thead>${head}</thead><tbody>${body}</tbody></table>`;
+  // materials + info
+  document.getElementById('m-book').textContent=c.material;
+  document.getElementById('info').innerHTML=`
+    <h3 class="font-headline-md text-headline-md text-on-surface mb-1">코스 정보</h3>
+    <div class="divide-y divide-outline-variant">
+      ${[['유형',c.kind],['구역',c.grade],['운행',c.time],['탑승',c.sessions],['예약',c.open],['결제',c.material]].map(([k,v])=>`<div class="flex justify-between gap-4 py-2.5"><span class="text-on-surface-variant text-[14px]">${k}</span><span class="text-on-surface text-[14px] font-medium text-right">${v}</span></div>`).join('')}
+    </div>`;
+</script>
+<script>
+  function toggleTheme(){var d=document.documentElement,light=d.classList.toggle('light');d.classList.toggle('dark',!light);try{localStorage.setItem('mexx-theme',light?'light':'dark');}catch(e){}var ic=document.getElementById('theme-icon');if(ic)ic.textContent=light?'dark_mode':'light_mode';var lb=document.getElementById('theme-label');if(lb)lb.textContent=light?'\uc5b4\ub450\uc6b4 \ud654\uba74 \ubc84\uc804':'\ubc1d\uc740 \ud654\uba74 \ubc84\uc804';var m=document.querySelector('meta[name=theme-color]');if(m)m.content=light?'#f6f8fc':'#0a0c10';}
+  (function(){var nav=document.querySelector('nav');if(!nav)return;var kakao=nav.querySelector('a[href^="tel:"]');var light=document.documentElement.classList.contains('light');var btn=document.createElement('button');btn.id='theme-toggle';btn.setAttribute('aria-label','\ub2e4\ud06c/\ub77c\uc774\ud2b8 \ubaa8\ub4dc \uc804\ud658');btn.title='\ub2e4\ud06c/\ub77c\uc774\ud2b8 \uc804\ud658';btn.className='h-10 px-3 rounded-lg border border-outline-variant text-on-surface-variant hover:text-secondary hover:border-secondary transition-colors flex items-center gap-1.5 shrink-0';btn.innerHTML='<span class="material-symbols-outlined text-[20px]" id="theme-icon">'+(light?'dark_mode':'light_mode')+'</span><span id="theme-label" class="hidden sm:inline font-label-md text-label-md font-bold whitespace-nowrap">'+(light?'\uc5b4\ub450\uc6b4 \ud654\uba74 \ubc84\uc804':'\ubc1d\uc740 \ud654\uba74 \ubc84\uc804')+'</span>';btn.onclick=toggleTheme;if(kakao&&kakao.parentElement){kakao.parentElement.insertBefore(btn,kakao);}else{nav.appendChild(btn);}})();
+</script>
+</body></html>
