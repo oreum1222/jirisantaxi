@@ -11,6 +11,7 @@
 <title>대표 소개 · 김성수 | 지리산인월택시 · 지리산콜택시</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300..700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -50,124 +51,150 @@
   .crd-hover:hover{transform:translateY(-4px);border-color:rgba(34,160,94,.38);box-shadow:0 16px 38px rgba(0,0,0,.5),0 0 0 1px rgba(34,160,94,.1);}
   ::-webkit-scrollbar{width:8px;height:8px;}::-webkit-scrollbar-track{background:rgb(var(--c-surface-bright));}::-webkit-scrollbar-thumb{background:rgb(var(--c-surface-container-highest));border-radius:4px;}
 </style>
+<link href="paper.css" rel="stylesheet"/>
 </head>
 <body class="bg-background text-on-surface font-body-md overflow-x-hidden" style="word-break:keep-all;overflow-wrap:break-word">
 <!-- Nav -->
-<nav class="w-full top-0 sticky z-50 bg-background/85 backdrop-blur border-b border-outline-variant">
-<div class="flex justify-between items-center h-16 px-margin-desktop max-w-container-max mx-auto">
-<div class="flex items-center gap-8">
-<a class="flex items-center gap-2.5" href="index.html"><span class="w-7 h-7 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">local_taxi</span></span><span class="font-headline-md text-headline-md font-extrabold text-on-surface tracking-tight whitespace-nowrap">지리산 <span class="text-secondary">인월택시</span></span></a>
-<div class="hidden md:flex gap-6 items-center">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">홈</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="courses.html">운행지역</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html#book">예약안내</a>
-<a class="font-body-md text-body-md text-secondary border-b-2 border-secondary font-bold pb-1" href="teacher.html">대표소개</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html#contact">문의</a>
-</div>
-</div>
-<a class="bg-secondary text-on-secondary px-5 py-2.5 rounded-lg font-label-md text-label-md font-bold hover:opacity-90 transition-all flex items-center gap-1.5" href="tel:01036802088" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[18px]">call</span>전화 예약</a>
-</div>
-</nav>
-<!-- Hero -->
-<section class="relative overflow-hidden bg-surface-bright border-b border-outline-variant py-14 md:py-20">
-<!-- 지리산 배경 사진 (은은하게 · eimoberg, CC BY 2.0 / Wikimedia Commons) -->
-<img alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none z-0" src="hero-jirisan.jpg" style="opacity:.20"/>
-<div class="absolute inset-0 z-0 pointer-events-none" style="background:linear-gradient(90deg, rgb(var(--c-surface-bright)) 0%, rgb(var(--c-surface-bright) / .55) 46%, rgb(var(--c-surface-bright) / 0) 88%)"></div>
-<div class="absolute inset-x-0 bottom-0 h-24 z-0 pointer-events-none" style="background:linear-gradient(to top, rgb(var(--c-surface-bright)), rgb(var(--c-surface-bright) / 0))"></div>
-<div class="absolute -top-32 -right-20 w-[600px] h-[600px] rounded-full pointer-events-none z-0" style="background:radial-gradient(circle,rgba(34,160,94,.1),transparent 70%)"></div>
-<div class="max-w-container-max mx-auto px-margin-desktop relative z-10 flex flex-col md:flex-row items-center gap-10">
-<div class="relative shrink-0">
-<div class="w-44 h-44 md:w-52 md:h-52 rounded-full border-[3px] border-secondary p-1.5 overflow-hidden bg-surface-container-lowest flex items-center justify-center" style="background:radial-gradient(circle,#0e2a1c,#12151c)">
-<span class="material-symbols-outlined text-secondary" style="font-size:96px;font-variation-settings:'FILL' 1;">local_taxi</span>
-</div>
-<div class="absolute bottom-2 right-2 bg-secondary text-on-secondary w-9 h-9 rounded-full flex items-center justify-center shadow-lg"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">verified</span></div>
-</div>
-<div class="text-center md:text-left">
-<div class="inline-flex items-center gap-2 bg-secondary-fixed/60 text-secondary border border-secondary/25 px-3 py-1 rounded-full mb-4"><span class="material-symbols-outlined text-[16px]">verified_user</span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">무사고 인증차량 · 개인택시</span></div>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">대표 김성수</h1>
-<p class="font-headline-md text-headline-md text-secondary mt-2">무사고 운전으로 지리산 어디든, 안전하게</p>
-<div class="flex flex-wrap justify-center md:justify-start gap-x-7 gap-y-3 mt-6">
-<div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><span class="font-label-md text-on-surface-variant"><b class="text-on-surface">무사고 인증차량</b></span></div>
-<div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">terrain</span><span class="font-label-md text-on-surface-variant">지리산 전 지역 운행</span></div>
-<div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">badge</span><span class="font-label-md text-on-surface-variant">등록 개인택시 · <span class="whitespace-nowrap">407-05-19817</span></span></div>
-</div>
-</div>
+<style>
+.snav{position:sticky;top:0;z-index:50;background:rgba(245,244,239,.82);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid rgba(20,50,34,.09)}
+html.dark .snav{background:rgb(var(--c-background)/.8);border-bottom-color:rgba(143,212,168,.12)}
+.snav-in{max-width:1280px;margin:0 auto;height:64px;padding:0 40px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.snav-brand{display:flex;align-items:center;gap:10px;color:rgb(var(--c-on-surface));font-weight:700;font-size:17px;letter-spacing:-.02em;white-space:nowrap}
+.snav-brand svg{color:rgb(var(--c-secondary))}
+.snav-links{display:flex;gap:34px;margin-left:44px;margin-right:auto}
+.snav-links a{position:relative;font-size:15px;font-weight:500;color:rgb(var(--c-on-surface-variant));letter-spacing:-.01em;transition:color .2s}
+.snav-links a:hover{color:rgb(var(--c-on-surface))}
+.snav-links a.on{color:rgb(var(--c-on-surface));font-weight:600}
+.snav-links a.on::after{content:"";position:absolute;left:50%;bottom:-9px;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:rgb(var(--c-secondary))}
+.snav-right{display:flex;align-items:center;gap:10px}
+.snav-theme{width:38px;height:38px;border-radius:50%;border:1px solid rgba(20,50,34,.14);display:flex;align-items:center;justify-content:center;color:rgb(var(--c-on-surface-variant));transition:all .2s}
+html.dark .snav-theme{border-color:rgba(143,212,168,.2)}
+.snav-theme:hover{color:rgb(var(--c-on-surface));border-color:rgb(var(--c-secondary)/.5)}
+.snav-theme .material-symbols-outlined{font-size:19px}
+.snav-call{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 16px 0 18px;border-radius:999px;border:1px solid rgb(var(--c-secondary)/.4);color:rgb(var(--c-secondary));font-size:14.5px;font-weight:600;letter-spacing:-.01em;transition:all .2s;white-space:nowrap}
+.snav-call:hover{background:rgb(var(--c-secondary));border-color:rgb(var(--c-secondary));color:rgb(var(--c-on-secondary))}
+.snav-call .material-symbols-outlined{font-size:17px;transition:transform .2s}
+.snav-call:hover .material-symbols-outlined{transform:translate(2px,-2px)}
+@media (max-width:767px){.snav-in{padding:0 16px;height:58px}.snav-links{display:none}}
+</style><nav class="snav"><div class="snav-in"><a class="snav-brand" href="index.html"><svg width="24" height="16" viewBox="0 0 24 16" fill="none" aria-hidden="true"><path d="M1 15 L8.5 4.5 L12 9 L16 2.5 L23 15" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></svg>지리산인월택시</a><div class="snav-links"><a href="index.html">홈</a><a href="courses.html">운행지역</a><a href="index.html#book">예약안내</a><a class="on" href="teacher.html">대표소개</a><a href="index.html#contact">문의</a></div><div class="snav-right"><button aria-label="화면 밝기 전환" class="snav-theme" id="theme-toggle" onclick="toggleTheme()" title="화면 밝기 전환"><span class="material-symbols-outlined" id="theme-icon">dark_mode</span><span class="sr-only" id="theme-label">어두운 화면 버전</span></button><a class="snav-call" href="tel:01036802088">전화 예약<span class="material-symbols-outlined">arrow_outward</span></a></div></div></nav>
+<!-- 대표 소개 -->
+<div class="pp flex-grow">
+<header class="pp-head"><div class="pp-in">
+<p class="pp-kick">대표 소개</p>
+<h1 class="pp-h1">대표 김성수</h1>
+<p class="pp-lead">오랜 무사고 운전 경력의 개인택시.<br/>지리산 전 지역을 운행합니다.</p>
+</div><div class="pp-ridge" aria-hidden="true"></div></header>
+<main class="pp-in">
+<section class="pp-sec">
+<blockquote class="pp-quote pp-fade">무사고 운전자로서,<br/>안전 운행을 약속합니다.</blockquote>
+<p class="pp-by pp-fade"><b>대표 김성수</b> · 지리산인월택시</p>
+<div class="pp-body pp-fade"><h3>인사말</h3><div>
+<p><b>지리산인월택시</b>는 오랜 무사고 운전 경력의 <span class="whitespace-nowrap">대표 김성수</span>가 운영하는 개인택시입니다.</p>
+<p>성삼재·백무동·뱀사골·정령치부터 지리산둘레길, 인월·남원 터미널까지 <span class="whitespace-nowrap">지리산 전 지역을</span> 운행합니다.</p>
+<p>새벽 산행 출발부터 하산 후 터미널 이동까지, 미리 예약하면 원하는 시간에 맞춰 운행합니다.</p>
+</div></div>
+</section>
+<section class="pp-sec">
+<div class="pp-strip pp-fade">
+<div><strong>무사고 운전</strong><span>오랜 무사고 경력의 인증차량<br/>안전 운행이 원칙</span></div>
+<div><strong>지리산 전문</strong><span>성삼재·백무동·뱀사골·둘레길<br/>최적 경로로 운행</span></div>
+<div><strong>등록 개인택시</strong><span>사업자등록 <span style="display:inline;margin:0;white-space:nowrap">407-05-19817</span><br/>현금·카드 결제</span></div>
 </div>
 </section>
-<main class="max-w-container-max mx-auto px-margin-desktop py-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
-<!-- About -->
-<div class="lg:col-span-8 space-y-14">
-<section class="fi">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">person</span>대표 소개</h2>
-<div class="space-y-4 text-on-surface-variant leading-relaxed">
-<p class="font-body-lg text-body-lg"><b class="text-on-surface">지리산인월택시</b>는 오랜 무사고 운전으로 업계 선두를 달려온 <b class="text-on-surface">대표 김성수</b>의 개인택시입니다. 지난 수년간 고객님들과 더불어 성장해 왔습니다.</p>
-<p class="font-body-md text-body-md">개인택시업계의 경쟁이 점점 더 치열해지는 상황에서도, <b class="text-on-surface">고객님을 먼저 생각하는 노하우</b>를 바탕으로 더욱 편안한 여행이 되시도록 안전하게 모시고 있습니다.</p>
-<p class="font-body-md text-body-md">성삼재·백무동·뱀사골·정령치부터 지리산둘레길, 인월·남원 터미널까지 — 지리산 구석구석을 잘 아는 기사가 안전하게 안내합니다.</p>
-<p class="font-body-md text-body-md">보여주신 고객 여러분의 관심과 성원에 깊이 감사드립니다.</p>
-<div class="flex items-start gap-3 rounded-xl bg-secondary-fixed/40 border border-secondary/20 px-5 py-4 my-8">
-<span class="material-symbols-outlined text-secondary mt-0.5 shrink-0">format_quote</span>
-<p class="font-body-md text-body-md text-on-surface">“무사고 운전자로서, 여러분을 안전하게 모실 것을 약속드립니다. 더 편안한 여행이 되시도록 늘 노력하겠습니다.”</p>
-</div>
-</div>
+<section class="pp-sec">
+<p class="pp-kick pp-fade">한눈에 보기</p>
+<h2 class="pp-h2 pp-fade">이용 정보</h2>
+<dl class="pp-dl pp-fade">
+<div><dt>운행 지역</dt><dd>지리산 전 지역</dd></div>
+<div><dt>픽업 터미널</dt><dd>인월시외 · 남원시외 · 남원고속버스터미널</dd></div>
+<div><dt>탑승 인원</dt><dd>최대 4인</dd></div>
+<div><dt>예약</dt><dd>24시간 예약제 · 새벽 픽업 가능</dd></div>
+<div><dt>결제</dt><dd>현금 · 카드</dd></div>
+</dl>
 </section>
-<section class="fi">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">workspace_premium</span>이런 점이 다릅니다</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="crd-hover bg-surface-container-lowest p-6 rounded-xl border border-outline-variant"><div class="w-12 h-12 bg-secondary-fixed text-secondary rounded-xl flex items-center justify-center mb-4"><span class="material-symbols-outlined">verified</span></div><h4 class="font-headline-md text-[17px] text-on-surface mb-1">무사고 운전</h4><p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed">오랜 무사고 경력의 인증차량<br/>안전을 최우선으로 운행</p></div>
-<div class="crd-hover bg-surface-container-lowest p-6 rounded-xl border border-outline-variant"><div class="w-12 h-12 bg-secondary-fixed text-secondary rounded-xl flex items-center justify-center mb-4"><span class="material-symbols-outlined">terrain</span></div><h4 class="font-headline-md text-[17px] text-on-surface mb-1">지리산 전문</h4><p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed">성삼재·백무동·뱀사골·둘레길<br/>지리산 구석구석 최적 경로</p></div>
-<div class="crd-hover bg-surface-container-lowest p-6 rounded-xl border border-outline-variant"><div class="w-12 h-12 bg-secondary-fixed text-secondary rounded-xl flex items-center justify-center mb-4"><span class="material-symbols-outlined">badge</span></div><h4 class="font-headline-md text-[17px] text-on-surface mb-1">등록 개인택시</h4><p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed">대표 김성수<br/>사업자등록 <span class="whitespace-nowrap">407-05-19817</span><br/>현금·카드 결제</p></div>
-</div>
+<section class="pp-sec">
+<p class="pp-kick pp-fade">운행 가능 지역</p>
+<h2 class="pp-h2 pp-fade">주요 운행 코스</h2>
+<div class="pp-rows pp-fade" id="teacher-courses"></div>
 </section>
-<section class="fi">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">map</span>운행 가능 지역</h2>
-<p class="text-body-md text-on-surface-variant mb-8">지리산 주요 들머리·둘레길·터미널 — 목적지를 눌러 이용 안내를 확인하세요.</p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-5" id="teacher-courses"></div>
+<section class="pp-end">
+<h2 class="pp-fade">지리산 어디든, 안전하게 운행합니다</h2>
+<p class="pp-fade">미리 예약하면 원하는 시간에 맞춰 픽업합니다.</p>
+<div class="pp-btns pp-fade"><a class="pp-call" href="tel:01036802088"><span class="material-symbols-outlined">call</span>전화 예약하기</a><a class="pp-link" href="sms:01036802088">문자로 예약</a><a class="pp-link" href="#kakao" onclick="alert('카카오톡 예약 채널은 준비 중입니다.\n전화 또는 문자로 예약해 주세요.');return false;">카카오톡 예약</a></div>
 </section>
-</div>
-<!-- Sidebar -->
-<aside class="lg:col-span-4">
-<div class="sticky top-24 space-y-6">
-<div class="bg-surface-container-lowest p-7 rounded-2xl border border-outline-variant">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-5">한눈에 보기</h3>
-<div class="space-y-4">
-<div class="flex justify-between items-center"><span class="font-body-md text-on-surface-variant">운행 지역</span><span class="font-label-md text-on-surface">지리산 전 지역</span></div>
-<div class="flex justify-between items-center"><span class="font-body-md text-on-surface-variant">픽업 터미널</span><span class="font-label-md text-on-surface">인월 · 남원</span></div>
-<div class="flex justify-between items-center"><span class="font-body-md text-on-surface-variant">탑승 인원</span><span class="font-label-md text-secondary bg-secondary-fixed px-3 py-1 rounded-full">최대 4인</span></div>
-<div class="flex justify-between items-center"><span class="font-body-md text-on-surface-variant">결제</span><span class="font-label-md text-on-surface">현금 · 카드</span></div>
-</div>
-<a class="block text-center w-full mt-7 py-3.5 bg-secondary text-on-secondary rounded-xl font-headline-md text-[16px] font-bold hover:opacity-90 transition-all" href="tel:01036802088">전화 예약</a>
-<div class="flex gap-3 mt-3">
-<a class="flex-1 text-center py-3 bg-surface-container border border-outline-variant rounded-xl font-label-md text-on-surface hover:border-secondary/40 transition-all" href="sms:01036802088">문자 예약</a>
-<a class="flex-1 text-center py-3 bg-surface-container border border-outline-variant rounded-xl font-label-md text-on-surface hover:border-secondary/40 transition-all" href="#kakao" onclick="alert('카카오톡 예약 채널은 준비 중입니다.\n전화 또는 문자로 예약해 주세요.');return false;">카카오톡</a>
-</div>
-</div>
-</div>
-</aside>
 </main>
-<footer class="w-full bg-background border-t border-outline-variant">
-<div class="py-10 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-<div class="flex items-center gap-2.5"><span class="w-6 h-6 rounded bg-secondary text-on-secondary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">local_taxi</span></span><span class="font-headline-md font-bold text-on-surface">지리산인월택시</span></div>
-<div class="text-center md:text-right"><p class="font-label-md text-on-surface-variant">개인택시 · 대표 김성수 · 지리산 · 인월 · 남원</p><p class="text-[11px] text-on-surface-variant/70 mt-1.5">배경 사진 ⓒ eimoberg · <a class="hover:text-secondary underline" href="https://commons.wikimedia.org/wiki/File:Korea-Mountain-Jirisan-09.jpg" rel="noopener" target="_blank">Wikimedia Commons</a> · CC BY 2.0</p></div>
 </div>
+<footer class="jf mt-auto" id="site-footer">
+<style>
+.jf{--jf-bg:#f3f2ec;--jf-text:#17231c;--jf-muted:#5b6a60;--jf-dash:rgba(20,50,34,.22);--jf-ink:#123f29;--jf-band:#dcebdf;--jf-deep:#0f3a25;background:var(--jf-bg);color:var(--jf-text);position:relative;overflow:hidden;border-top:1px solid var(--jf-dash)}
+html.dark .jf{--jf-bg:#0c1410;--jf-text:#e2ece5;--jf-muted:#90a898;--jf-dash:rgba(143,212,168,.2);--jf-ink:#7fc79a;--jf-band:#bcd6c4;--jf-deep:#0b2317}
+.jf-wrap{position:relative;max-width:1280px;margin:0 auto}
+.jf-grid{position:relative;display:grid;grid-template-columns:repeat(4,1fr);padding-top:64px;min-height:400px}
+.jf-grid::before{content:"";position:absolute;left:0;right:0;top:64px;border-top:1px dashed var(--jf-dash)}
+.jf-cell{position:relative;text-align:center;padding:72px 16px 40px;border-left:1px dashed var(--jf-dash)}
+.jf-cell:last-child{border-right:1px dashed var(--jf-dash)}
+.jf-cell::before,.jf-cell:last-child::after{content:"";position:absolute;top:-64px;height:64px;border-left:1px dashed var(--jf-dash)}
+.jf-cell::before{left:-1px} .jf-cell:last-child::after{right:-1px}
+.jf-h{font-size:18px;font-weight:600;letter-spacing:-.01em;margin-bottom:16px}
+.jf-cell li{line-height:1;margin:0 0 14px}
+.jf-cell a{position:relative;font-size:15px;color:var(--jf-muted);transition:color .2s}
+.jf-cell li a::before{content:"–";position:absolute;right:100%;margin-right:8px;opacity:0;transform:translateX(4px);transition:all .2s}
+.jf-cell li a:hover{color:var(--jf-text);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.jf-cell li a:hover::before{opacity:1;transform:none}
+.jf-brand{display:inline-flex;align-items:center;gap:10px;font-size:26px;font-weight:800;letter-spacing:-.03em;color:var(--jf-text)!important}
+.jf-logo{width:36px;height:36px;border-radius:6px;background:var(--jf-ink);color:var(--jf-bg);display:inline-flex;align-items:center;justify-content:center}
+.jf-tag{margin-top:14px;font-size:14.5px;line-height:1.55;color:var(--jf-muted)}
+.jf-tel{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:9px 18px;border-radius:999px;background:var(--jf-ink);color:var(--jf-bg)!important;font-size:15px;font-weight:700;transition:opacity .2s}.jf-tel:hover{opacity:.88}
+.jf-copy{margin-top:12px;font-size:13.5px;color:var(--jf-muted)}
+.jf-mtn{position:relative;width:100%;aspect-ratio:2000/656;margin-top:-60px;background:var(--jf-ink);-webkit-mask:url(jirisan-ink.webp) center bottom/100% 100% no-repeat;mask:url(jirisan-ink.webp) center bottom/100% 100% no-repeat;pointer-events:none}
+.jf-band{background:var(--jf-deep);color:var(--jf-band)}
+.jf-band a{color:var(--jf-band);text-decoration:underline;text-underline-offset:2px}
+@media (max-width:767px){
+ .jf-grid{grid-template-columns:1fr 1fr;padding-top:0;min-height:0}
+ .jf-grid::before,.jf-cell::before,.jf-cell:last-child::after{display:none}
+ .jf-cell{border:0!important;padding:36px 12px 8px}
+ .jf-cell:first-child{grid-column:1/-1;padding-top:48px}
+ .jf-mtn{margin-top:-10px;width:170%;margin-left:-35%}
+}
+.jf.anim .jf-mtn{opacity:0;transform:translateY(48px);transition:opacity 1.4s ease,transform 1.8s cubic-bezier(.2,.7,.2,1)}
+.jf.anim.on .jf-mtn{opacity:1;transform:translateY(0)}
+</style>
+<div class="jf-wrap">
+<div class="jf-grid">
+<div class="jf-cell">
+<a class="jf-brand" href="index.html"><span class="jf-logo"><span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1;">local_taxi</span></span>지리산인월택시</a>
+<p class="jf-tag">인월·남원 터미널에서<br/>지리산 들머리까지, 24시간 예약</p>
+<a class="jf-tel" href="tel:01036802088"><span class="material-symbols-outlined" style="font-size:18px;font-variation-settings:'FILL' 1">call</span>전화 예약</a>
+<p class="jf-copy">© 2026 지리산인월택시</p>
+</div>
+<div class="jf-cell"><p class="jf-h">운행 코스</p><ul><li><a href="course.html?c=seongsamjae">성삼재</a></li><li><a href="course.html?c=baekmudong">백무동</a></li><li><a href="course.html?c=jeongnyeongchi">정령치</a></li><li><a href="course.html?c=baemsagol">뱀사골</a></li><li><a href="course.html?c=dulle">지리산둘레길</a></li><li><a href="course.html?c=terminal">터미널 픽업</a></li></ul></div><div class="jf-cell"><p class="jf-h">예약 안내</p><ul><li><a href="tel:01036802088">전화 예약</a></li><li><a href="sms:01036802088">문자 예약</a></li><li><a href="index.html#book">예약 방법</a></li><li><a href="index.html#faq">자주 묻는 질문</a></li></ul></div><div class="jf-cell"><p class="jf-h">택시 소개</p><ul><li><a href="teacher.html">대표 소개</a></li><li><a href="index.html#trust">무사고 인증차량</a></li><li><a href="courses.html">전체 코스</a></li><li><a href="index.html#contact">연락처</a></li></ul></div>
+</div>
+</div>
+<div class="jf-mtn" role="img" aria-label="펜 에칭으로 그린 지리산 능선과 운해"></div>
+<div class="jf-band">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-5 flex flex-col md:flex-row md:justify-between gap-1.5 text-[12.5px] leading-relaxed">
+<p><span class="whitespace-nowrap">개인택시 지리산인월택시 · 대표 김성수</span> · <span class="whitespace-nowrap">사업자등록번호 407-05-19817</span> · <span class="whitespace-nowrap">전북 남원시 아영면 청계리 38-1</span></p>
+<p class="opacity-80">배경 사진 ⓒ eimoberg · <a href="https://commons.wikimedia.org/wiki/File:Korea-Mountain-Jirisan-09.jpg" rel="noopener" target="_blank">Wikimedia Commons</a> · CC BY 2.0</p>
+</div>
+</div>
+<script>
+(function(){var ft=document.getElementById('site-footer');
+if((window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)||!('IntersectionObserver' in window))return;
+ft.classList.add('anim');
+var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){ft.classList.add('on');io.disconnect();}},{threshold:.15});
+io.observe(ft);})();
+</script>
 </footer>
 <script src="courses-data.js"></script>
+<script src="routes-data.js"></script>
 <script>
-  // 담당 강좌 카드 렌더 (공통 데이터)
   const wrap=document.getElementById('teacher-courses');
-  if(window.COURSES){window.COURSES.forEach(c=>{
-    const a=document.createElement('a'); a.href='course.html?c='+c.id;
-    a.className='crd-hover bg-surface-container-lowest border border-outline-variant rounded-2xl p-5 flex items-center gap-4 no-underline';
-    a.innerHTML=`<div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:${c.headerbg}"><span class="material-symbols-outlined text-secondary">${c.icon}</span></div>
-      <div class="min-w-0"><div class="flex items-center gap-2"><span class="text-secondary font-bold text-[11px] bg-secondary-fixed px-2 py-0.5 rounded-full">${c.grade}</span><span class="text-on-surface-variant text-[12px]">${c.kind} · ${c.time}</span></div>
-      <h4 class="font-headline-md text-[16px] text-on-surface mt-1.5 truncate">${c.subject}</h4></div>
-      <span class="material-symbols-outlined text-on-surface-variant ml-auto shrink-0">arrow_forward</span>`;
-    wrap.appendChild(a);
-  });}
-  const o=new IntersectionObserver(es=>{es.forEach((e,i)=>{e.isIntersecting&&(setTimeout(()=>e.target.classList.add('v'),i*60),o.unobserve(e.target))})},{threshold:.1});
-  document.querySelectorAll('.fi').forEach(e=>o.observe(e));
+  if(window.COURSES){wrap.innerHTML=window.COURSES.map((c,i)=>{const R=(window.ROUTES||{})[c.id];
+    const d=R?`<span class="whitespace-nowrap">${R.from} → ${R.to}</span> · <span class="whitespace-nowrap"><b>${R.km}km</b> · 약 <b>${R.min}분</b></span>`:c.tagline;
+    return `<a class="pp-row" href="course.html?c=${c.id}"><span class="n">${String(i+1).padStart(2,'0')}</span><span class="t">${c.subject}</span><span class="d">${d}</span><span class="a material-symbols-outlined">arrow_forward</span></a>`}).join('');}
 </script>
+<script>(function(){var o=new IntersectionObserver(function(es){es.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('v')},i*70);o.unobserve(e.target)}})},{threshold:.1});document.querySelectorAll('.pp-fade').forEach(function(e){o.observe(e)});})();</script>
 <script>
   function toggleTheme(){var d=document.documentElement,light=d.classList.toggle('light');d.classList.toggle('dark',!light);try{localStorage.setItem('mexx-theme',light?'light':'dark');}catch(e){}var ic=document.getElementById('theme-icon');if(ic)ic.textContent=light?'dark_mode':'light_mode';var lb=document.getElementById('theme-label');if(lb)lb.textContent=light?'\uc5b4\ub450\uc6b4 \ud654\uba74 \ubc84\uc804':'\ubc1d\uc740 \ud654\uba74 \ubc84\uc804';var m=document.querySelector('meta[name=theme-color]');if(m)m.content=light?'#f6f8fc':'#0a0c10';}
-  (function(){var nav=document.querySelector('nav');if(!nav)return;var kakao=nav.querySelector('a[href^="tel:"]');var light=document.documentElement.classList.contains('light');var btn=document.createElement('button');btn.id='theme-toggle';btn.setAttribute('aria-label','\ub2e4\ud06c/\ub77c\uc774\ud2b8 \ubaa8\ub4dc \uc804\ud658');btn.title='\ub2e4\ud06c/\ub77c\uc774\ud2b8 \uc804\ud658';btn.className='h-10 px-3 rounded-lg border border-outline-variant text-on-surface-variant hover:text-secondary hover:border-secondary transition-colors flex items-center gap-1.5 shrink-0';btn.innerHTML='<span class="material-symbols-outlined text-[20px]" id="theme-icon">'+(light?'dark_mode':'light_mode')+'</span><span id="theme-label" class="hidden sm:inline font-label-md text-label-md font-bold whitespace-nowrap">'+(light?'\uc5b4\ub450\uc6b4 \ud654\uba74 \ubc84\uc804':'\ubc1d\uc740 \ud654\uba74 \ubc84\uc804')+'</span>';btn.onclick=toggleTheme;if(kakao&&kakao.parentElement){kakao.parentElement.insertBefore(btn,kakao);}else{nav.appendChild(btn);}})();
 </script>
 </body></html>
